@@ -18,7 +18,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::createFileButton()
 {
-    fileName = QFileDialog::getSaveFileName(this, tr("Create File"), "/home/tproo", tr("Text (*.txt)"));
+    fileName = QFileDialog::getSaveFileName(this, tr("Create File"), "/", tr("Text (*.txt)"));
     facade.setFileName(fileName);
     if (ui->textEdit->toPlainText().isEmpty())
     {
